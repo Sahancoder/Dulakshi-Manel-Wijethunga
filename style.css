@@ -504,9 +504,9 @@ textarea:focus-visible {
 /* ===== Contact ===== */
 .contact-layout {
     display: grid;
-    grid-template-columns: 1fr 1.4fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    align-items: start;
+    align-items: stretch;
 }
 
 .contact-info,
@@ -517,6 +517,27 @@ textarea:focus-visible {
 .contact-info:hover,
 .contact-form:hover {
     transform: none;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-photo {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+    object-position: center top;
+    border: 4px solid var(--white);
+    border-radius: 50%;
+    box-shadow: var(--shadow-hover);
+}
+
+.contact-info p {
+    word-break: break-word;
 }
 
 .click-me-area {
@@ -678,6 +699,73 @@ textarea.input-invalid {
 @media (max-width: 600px) {
     .skills-list,
     .hobbies-list { grid-template-columns: 1fr; }
+
+    /* Education table: stack each row as a card instead of scrolling sideways */
+    .table-wrapper {
+        overflow: visible;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .education-table,
+    .education-table tbody,
+    .education-table tr,
+    .education-table th,
+    .education-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .education-table { min-width: 0; }
+
+    .education-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
+
+    .education-table tbody tr,
+    .education-table tbody tr:last-child {
+        margin-bottom: 1rem;
+        background-color: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+    }
+
+    .education-table tbody th,
+    .education-table tbody tr:last-child th {
+        padding: 0.8rem 1.25rem;
+        background-color: var(--navy);
+        color: var(--white);
+        border-bottom: none;
+    }
+
+    .education-table td,
+    .education-table tbody tr:last-child td {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.7rem 1.25rem;
+        text-align: right;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .education-table tbody tr td:last-child { border-bottom: none; }
+
+    .education-table td::before {
+        content: attr(data-label);
+        flex-shrink: 0;
+        font-weight: 700;
+        color: var(--blue);
+        text-align: left;
+    }
+
+    .education-table td:empty { display: none; }
 }
 
 @media (max-width: 400px) {
