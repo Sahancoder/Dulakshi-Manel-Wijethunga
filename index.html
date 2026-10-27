@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Dulakshi Manel Wijethunga, an ICT Diploma student at Meridians Campus of Higher Education.">
+    <meta name="author" content="G. Dulakshi Manel Wijethunga">
+    <title>Dulakshi Manel Wijethunga | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Task 1: Welcome message (text is filled in by script.js) -->
+    <div id="welcome-message" class="welcome-message" role="status" aria-live="polite" hidden></div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home">Dulakshi Manel</a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+                <span class="menu-toggle-label">Menu</span>
+                <span class="menu-toggle-bars" aria-hidden="true"></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">My Skills</a></li>
+                    <li><a href="#hobbies">My Hobbies</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HOME -->
+        <section class="section hero" id="home" aria-labelledby="hero-heading">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 id="hero-heading">Dulakshi Manel Wijethunga</h1>
+                    <p class="hero-subtitle">ICT Diploma Student | Technology Enthusiast</p>
+                    <p>I am a motivated ICT Diploma student at Meridians Campus of Higher Education, with a growing interest in information technology, computer applications, and digital skills.</p>
+                    <p>My goal is to continuously develop my technical knowledge and build a successful future career in the IT industry.</p>
+
+                    <div class="button-row">
+                        <a class="button button-primary" href="#about">About Me</a>
+                        <a class="button button-outline" href="#contact">Contact Me</a>
+                    </div>
+
+                    <!-- Task 3: Current date (filled in by script.js) -->
+                    <p class="today-date">Today is <time id="current-date"></time></p>
+                </div>
+
+                <div class="hero-photo">
+                    <img src="images/profile.jpg" width="900" height="900" alt="Portrait of Dulakshi Manel Wijethunga, smiling, wearing a black blazer over a white polka-dot top">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section class="section section-alt" id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">About Me</h2>
+
+                <div class="about-text">
+                    <p>I am G. Dulakshi Manel Wijethunga, an enthusiastic ICT Diploma student currently studying at Meridians Campus of Higher Education.</p>
+                    <p>I have completed my G.C.E. Advanced Level examination and have also pursued an English Diploma at Britishway English Academy.</p>
+                    <p>I am passionate about improving my knowledge in information technology, learning new computer applications, and developing practical digital skills.</p>
+                    <p>I believe that continuous learning, dedication, and good communication skills are essential for personal and professional development.</p>
+                    <p>My ambition is to become a skilled professional in the Information Technology field.</p>
+                </div>
+
+                <h3 class="subsection-title">Educational Qualifications</h3>
+                <div class="table-wrapper">
+                    <table class="education-table">
+                        <caption class="visually-hidden">Educational qualifications of Dulakshi Manel Wijethunga</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Qualification</th>
+                                <th scope="col">Institution</th>
+                                <th scope="col">Year / Batch</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">ICT Diploma</th>
+                                <td>Meridians Campus of Higher Education</td>
+                                <td>Batch 03</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">English Diploma</th>
+                                <td>Britishway English Academy</td>
+                                <td>Not specified</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">G.C.E. Advanced Level</th>
+                                <td>Institution not provided</td>
+                                <td>2024/2025</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- MY SKILLS -->
+        <section class="section" id="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section-title">My Skills</h2>
+                <p class="section-intro">These are the skills I am building during my ICT Diploma studies.</p>
+
+                <ul class="skills-list">
+                    <li class="card skill-card">
+                        <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+                        <span>Computer Literacy</span>
+                    </li>
+                    <li class="card skill-card">
+                        <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></svg>
+                        <span>Microsoft Office Applications</span>
+                    </li>
+                    <li class="card skill-card">
+                        <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>
+                        <span>Communication Skills</span>
+                    </li>
+                    <li class="card skill-card">
+                        <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.800 1-2.500A6 6 0 0 0 12 3z"/></svg>
+                        <span>Problem Solving</span>
+                    </li>
+                    <li class="card skill-card">
+                        <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                        <span>Time Management</span>
+                    </li>
+                    <li class="card skill-card">
+                        <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg>
+                        <span>Basic Web Development</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- MY HOBBIES -->
+        <section class="section section-alt" id="hobbies" aria-labelledby="hobbies-heading">
+            <div class="container">
+                <h2 id="hobbies-heading" class="section-title">My Hobbies</h2>
+                <p class="section-intro">Things I enjoy doing in my free time.</p>
+
+                <ol class="hobbies-list">
+                    <li class="card hobby-card">
+                        <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+                        <div>
+                            <h3>Listening to Music</h3>
+                            <p>Music helps me relax and stay focused.</p>
+                        </div>
+                    </li>
+                    <li class="card hobby-card">
+                        <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-7a3 3 0 0 0-3 3"/><path d="M20 4v14h-6"/></svg>
+                        <div>
+                            <h3>Reading Books</h3>
+                            <p>Reading expands my knowledge and imagination.</p>
+                        </div>
+                    </li>
+                    <li class="card hobby-card">
+                        <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
+                        <div>
+                            <h3>Learning New Technologies</h3>
+                            <p>I enjoy discovering new tools and digital trends.</p>
+                        </div>
+                    </li>
+                    <li class="card hobby-card">
+                        <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z"/></svg>
+                        <div>
+                            <h3>Watching Educational Videos</h3>
+                            <p>Videos are a great way to learn new things.</p>
+                        </div>
+                    </li>
+                    <li class="card hobby-card">
+                        <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.500 0 2-1 1.500-2-.5-1 0-2 1.500-2h2a4 4 0 0 0 4-4A9 9 0 0 0 12 3z"/><circle cx="8" cy="11" r="1"/><circle cx="12" cy="7.500" r="1"/><circle cx="16" cy="11" r="1"/></svg>
+                        <div>
+                            <h3>Exploring Creative Activities</h3>
+                            <p>Creative activities let me try new ideas.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- CONTACT ME -->
+        <section class="section" id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Contact Me</h2>
+                <p class="section-intro">I would be happy to hear from you.</p>
+
+                <div class="contact-layout">
+                    <div class="contact-info card">
+                        <h3>Get in Touch</h3>
+                        <p>Email: <a href="mailto:dulakshimanel11@gmail.com">dulakshimanel11@gmail.com</a></p>
+                        <p>External link: <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Visit Google</a></p>
+
+                        <!-- Task 2: Click Me button (separate from the form) -->
+                        <div class="click-me-area">
+                            <button type="button" id="click-me-button" class="button button-primary">Click Me</button>
+                            <p id="click-me-message" class="click-me-message" role="status" aria-live="polite"></p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form card" id="contact-form" novalidate>
+                        <h3>Send a Message</h3>
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+                            <p class="error-message" id="name-error" role="alert"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+                            <p class="error-message" id="email-error" role="alert"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
+                            <p class="error-message" id="message-error" role="alert"></p>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit</button>
+                        <p id="form-success" class="form-success" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="footer-year">2026</span> Dulakshi Manel Wijethunga.</p>
+            <p>Personal Portfolio — ICT Diploma Student.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
